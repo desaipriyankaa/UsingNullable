@@ -7,8 +7,8 @@ namespace UsingNullable
     class PlayerCharacter
     {
         public string Name { get; set; }
-        public Nullable<int> DaySinceLastLogin { get; set; }
-        public Nullable<DateTime> DateOfBirth { get; set; }
+        public int? DaySinceLastLogin { get; set; }
+        public DateTime? DateOfBirth { get; set; }
 
         public PlayerCharacter()
         {
