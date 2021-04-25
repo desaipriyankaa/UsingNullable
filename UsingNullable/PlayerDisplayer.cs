@@ -8,7 +8,15 @@ namespace UsingNullable
     {
         public static void write(PlayerCharacter player)
         {
-            Console.WriteLine(player.Name);
+            if (string.IsNullOrWhiteSpace(player.Name))
+            {
+                Console.WriteLine("string is null or contains all whitespaces..");
+            }
+            else
+            {
+                Console.WriteLine(player.Name);
+            }
+        
 
             if (player.DaySinceLastLogin == null)
             {

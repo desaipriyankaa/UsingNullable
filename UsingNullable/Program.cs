@@ -7,7 +7,7 @@ namespace UsingNullable
         static void Main(string[] args)
         {
             var player = new PlayerCharacter();
-            player.Name = "Priyanka";
+            player.Name = "";// "    ";// null;// "Priyanka";
            // player.DaySinceLastLogin = 22;
 
             PlayerDisplayer.write(player);
