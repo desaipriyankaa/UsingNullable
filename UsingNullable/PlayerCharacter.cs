@@ -9,11 +9,6 @@ namespace UsingNullable
         public string Name { get; set; }
         public int? DaySinceLastLogin { get; set; }
         public DateTime? DateOfBirth { get; set; }
-
-        public PlayerCharacter()
-        {
-            DateOfBirth = null; 
-            DaySinceLastLogin = null; 
-        }
+        public bool? IsNoob { get; set; }
     }
 }

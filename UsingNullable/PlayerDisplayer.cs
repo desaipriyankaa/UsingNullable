@@ -27,6 +27,19 @@ namespace UsingNullable
             {
                 Console.WriteLine(player.DateOfBirth);
             }
+
+            if (player.IsNoob == null)
+            {
+                Console.WriteLine("Player newbie status is unknown");
+            }
+            else if (player.IsNoob == true)
+            {
+                Console.WriteLine("Player is newbie");
+            }
+            else
+            {
+                Console.WriteLine("Player is experianced");
+            }
         }
     }
 }
