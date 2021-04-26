@@ -8,7 +8,7 @@ namespace UsingNullable
         {
             var player = new PlayerCharacter();
             player.Name = "";// "    ";// null;// "Priyanka";
-            //player.DaySinceLastLogin = 22;
+            player.DaySinceLastLogin = 22;
 
             PlayerDisplayer.write(player);
         }
