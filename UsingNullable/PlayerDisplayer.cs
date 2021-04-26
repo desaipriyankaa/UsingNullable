@@ -16,16 +16,19 @@ namespace UsingNullable
             {
                 Console.WriteLine(player.Name);
             }
+
+            int days = player.DaySinceLastLogin.GetValueOrDefault(-1);
+            Console.WriteLine($"{days} days since last login");
         
 
-            if (!player.DaySinceLastLogin.HasValue)
-            {
-                Console.WriteLine("No value for daySinceLastLogin");
-            }
-            else
-            {
-                Console.WriteLine(player.DaySinceLastLogin.Value);
-            }
+            //if (!player.DaySinceLastLogin.HasValue)
+            //{
+            //    Console.WriteLine("No value for daySinceLastLogin");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(player.DaySinceLastLogin.Value);
+            //}
 
             if (player.DateOfBirth == null)
             {
