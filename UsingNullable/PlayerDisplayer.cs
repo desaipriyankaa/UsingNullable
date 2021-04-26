@@ -17,7 +17,10 @@ namespace UsingNullable
                 Console.WriteLine(player.Name);
             }
 
-            int days = player.DaySinceLastLogin.GetValueOrDefault(-1);
+           // int days = player.DaySinceLastLogin.GetValueOrDefault(-1);
+
+            int days = player.DaySinceLastLogin.HasValue ? player.DaySinceLastLogin.Value : -1 ;
+
             Console.WriteLine($"{days} days since last login");
         
 
