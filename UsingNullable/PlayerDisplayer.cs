@@ -18,13 +18,13 @@ namespace UsingNullable
             }
         
 
-            if (player.DaySinceLastLogin == null)
+            if (!player.DaySinceLastLogin.HasValue)
             {
                 Console.WriteLine("No value for daySinceLastLogin");
             }
             else
             {
-                Console.WriteLine(player.DaySinceLastLogin);
+                Console.WriteLine(player.DaySinceLastLogin.Value);
             }
 
             if (player.DateOfBirth == null)
